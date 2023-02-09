@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:elevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dog_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/baseline_10k_24"/>
+
+        <TextView
+            android:id="@+id/dog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/breed_label"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Chihuahua"/>
+
+        <TextView
+            android:id="@+id/dog_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Small"
+            app:layout_constraintTop_toBottomOf="@id/dog_name"
+            app:layout_constraintStart_toEndOf="@id/size_label"/>
+
+        <TextView
+            android:id="@+id/dog_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/group_label"
+            app:layout_constraintStart_toEndOf="@id/group_label"
+            android:text="Pastoral/Herding dog"
+            />
+
+        <TextView
+            android:id="@+id/dog_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dog_group"
+            app:layout_constraintStart_toStartOf="@id/dog_group"
+            android:text="Mexico/France"/>
+
+        <TextView
+            android:id="@+id/breed_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breed: "
+            app:layout_constraintTop_toTopOf="@id/dog_name"
+            app:layout_constraintStart_toEndOf="@id/dog_image"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/size_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size: "
+            app:layout_constraintTop_toTopOf="@id/dog_size"
+            app:layout_constraintStart_toStartOf="@id/breed_label"/>
+
+        <TextView
+            android:id="@+id/group_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group: "
+            app:layout_constraintTop_toTopOf="@id/dog_name"
+            app:layout_constraintStart_toEndOf="@id/dog_name"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/origin_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Origin: "
+            app:layout_constraintTop_toTopOf="@id/dog_origin"
+            app:layout_constraintStart_toStartOf="@id/group_label"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
