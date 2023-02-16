@@ -26,25 +26,15 @@ class DogListFragment : Fragment() {
         val dogs = mutableListOf<Dog>()
 
         dogs.add(createChihuahua())
-        //dogs.add(createAlaskanMalamute())
         dogs.add(createAustralianShepherd())
-        //dogs.add(createBassetHound())
-        //dogs.add(createBelgianMalinois())
-        //dogs.add(createBloodhound())
-        //dogs.add(createBostonTerrier())
         dogs.add(createBoxer())
         dogs.add(createBulldog())
-        //dogs.add(createDalmatian())
         dogs.add(createGermanShepherd())
         dogs.add(createGoldenRetriever())
         dogs.add(createGreatDane())
-        //dogs.add(createJackRusselTerrier())
         dogs.add(createPomeranian())
-        //dogs.add(createPug())
-        //dogs.add(createShibaInu())
         dogs.add(createShihTzu())
         dogs.add(createSiberianHusky())
-        //dogs.add(createStBernard())
 
         val adapter = DogAdapter(dogs)
         recyclerView.adapter = adapter
@@ -59,6 +49,7 @@ class DogListFragment : Fragment() {
         group = "Companion dog",
         origin = "Mexico",
         purity = "Purebred",
+        lifespan = "14-18 years"
     )
 
     private fun createGermanShepherd() = Dog(
@@ -67,7 +58,8 @@ class DogListFragment : Fragment() {
         image = "https://dogell.b-cdn.net/uploads/breed/thumb_german-shepherd.jpg",
         group = "Pastoral/Herding dog",
         origin = "German",
-        purity = "Purebred"
+        purity = "Purebred",
+        lifespan = "9-13 years"
     )
 
     private fun createGoldenRetriever() = Dog(
@@ -76,7 +68,8 @@ class DogListFragment : Fragment() {
         image = "https://dogell.b-cdn.net/uploads/breed/thumb_golden-retriever.jpg",
         group = "Gun dog",
         origin = "Scotland",
-        purity = "Purebred"
+        purity = "Purebred",
+        lifespan = "10-12 years"
     )
 
     private fun createBulldog() = Dog(
@@ -85,7 +78,8 @@ class DogListFragment : Fragment() {
         image = "https://dogell.b-cdn.net/uploads/breed/thumb_french-bulldog.jpg",
         group = "Companion dog",
         origin = "England",
-        purity = "Purebred"
+        purity = "Purebred",
+        lifespan = "8-10 years"
     )
 
     private fun createBoxer() = Dog(
@@ -94,7 +88,8 @@ class DogListFragment : Fragment() {
         image = "https://dogell.b-cdn.net/uploads/breed/thumb_boxer.jpg",
         group = "Working dog",
         origin = "Germany",
-        purity = "Purebred"
+        purity = "Purebred",
+        lifespan = "10-12 years"
     )
 
     private fun createSiberianHusky() = Dog(
@@ -103,7 +98,8 @@ class DogListFragment : Fragment() {
         image = "https://dogell.b-cdn.net/uploads/breed/thumb_siberian-husky.jpg",
         group = "Sled dog",
         origin = "Russia",
-        purity = "Purebred"
+        purity = "Purebred",
+        lifespan = "12-14 years"
     )
 
     private fun createGreatDane() = Dog(
@@ -112,7 +108,8 @@ class DogListFragment : Fragment() {
         image = "https://dogell.b-cdn.net/uploads/breed/thumb_great-dane.jpg",
         group = "Working dog",
         origin = "Germany",
-        purity = "Purebred"
+        purity = "Purebred",
+        lifespan = "7-11 years"
     )
 
     private fun createAustralianShepherd() = Dog(
@@ -121,7 +118,8 @@ class DogListFragment : Fragment() {
         image = "https://dogell.b-cdn.net/uploads/breed/thumb_australian-shepherd.jpg",
         group = "Pastoral/Herding dog",
         origin = "United States",
-        purity = "Purebred"
+        purity = "Purebred",
+        lifespan = "11-15 years"
     )
 
     private fun createShihTzu() = Dog(
@@ -130,7 +128,8 @@ class DogListFragment : Fragment() {
         image = "https://dogell.b-cdn.net/uploads/breed/thumb_shih-tzu.jpg",
         group = "Companion dog",
         origin = "China",
-        purity = "Purebred"
+        purity = "Purebred",
+        lifespan = "10-16 years"
     )
 
     private fun createPomeranian() = Dog(
@@ -139,86 +138,7 @@ class DogListFragment : Fragment() {
         image = "https://dogell.b-cdn.net/uploads/breed/thumb_pomeranian.jpg",
         group = "Companion dog",
         origin = "Germany, Poland",
-        purity = "Purebred"
+        purity = "Purebred",
+        lifespan = "12-18 years"
     )
-
-//    private fun createBostonTerrier() = Dog(
-//        name = "Boston Terrier",
-//        size = "Small",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Companion dog",
-//        origin = "United States"
-//    )
-//
-//    private fun createPug() = Dog(
-//        name = "Pug",
-//        size = "Small",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Companion dog",
-//        origin = "China"
-//    )
-//
-//    private fun createBassetHound() = Dog(
-//        name = "Basset Hound",
-//        size = "Medium",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Hunting dog",
-//        origin = "France"
-//    )
-//
-//    private fun createBelgianMalinois() = Dog(
-//        name = "Belgian Malinois",
-//        size = "Large",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Pastoral/Herding dog",
-//        origin = "Belgium"
-//    )
-//
-//    private fun createShibaInu() = Dog(
-//        name = "Shiba Inu",
-//        size = "Medium",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Companion dog",
-//        origin = "Japan"
-//    )
-//
-//    private fun createStBernard() = Dog(
-//        name = "St. Bernard",
-//        size = "Giant",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Working dog",
-//        origin = "Switzerland, Italy"
-//    )
-//
-//    private fun createBloodhound() = Dog(
-//        name = "Bloodhound",
-//        size = "Large",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Hunting dog",
-//        origin = "France, Belgium"
-//    )
-//
-//    private fun createAlaskanMalamute() = Dog(
-//        name = "Alaskan Malamute",
-//        size = "Large",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Sled dog",
-//        origin = "United States"
-//    )
-//
-//    private fun createDalmatian() = Dog(
-//        name = "Dalmatian",
-//        size = "Large",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Companion dog",
-//        origin = "Croatia"
-//    )
-//
-//    private fun createJackRusselTerrier() = Dog(
-//        name = "Jack Russel Terrier",
-//        size = "Small",
-//        image = R.drawable.baseline_10k_24,
-//        group = "Hunting dog",
-//        origin = "England"
-//    )
 }

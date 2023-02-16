@@ -21,12 +21,13 @@ class DogAdapter(private val dogs: List<Dog>) : RecyclerView.Adapter<DogAdapter.
             val dog = dogs[position]
 
             val bundle = bundleOf(
-                "breed" to dog.name,
+                "name" to dog.name,
                 "size" to dog.size,
                 "group" to dog.group,
                 "origin" to dog.origin,
                 "image" to dog.image,
-                "purity" to dog.purity
+                "purity" to dog.purity,
+                "lifespan" to dog.lifespan
             )
 
             val detailFragment = DogDetailFragment()
@@ -47,7 +48,7 @@ class DogAdapter(private val dogs: List<Dog>) : RecyclerView.Adapter<DogAdapter.
     override fun onBindViewHolder(holder: DogViewHolder, position: Int) {
         val dog = dogs[position]
         //holder.dogImage.setImageResource(dog.image)
-        Glide.with(holder.itemView.context).load(dog.image).into(holder.dogImage)
+        Glide.with(holder.itemView.context).load(dog.image).override(200, 200).into(holder.dogImage)
         holder.dogName.text = dog.name
         holder.dogSize.text = dog.size
         holder.dogGroup.text = dog.group

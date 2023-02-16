@@ -16,9 +16,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_10k_24"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="4dp"/>
 
         <TextView
             android:id="@+id/dog_name"
@@ -27,7 +28,8 @@
             app:layout_constraintStart_toEndOf="@id/vertical_guideline"
             app:layout_constraintTop_toTopOf="@id/breed_label"
             tools:text="Chihuahua"
-            android:textSize="16dp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/dog_size"
@@ -36,7 +38,8 @@
             tools:text="Small"
             app:layout_constraintTop_toTopOf="@id/size_label"
             app:layout_constraintStart_toEndOf="@id/vertical_guideline"
-            android:textSize="16dp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/dog_group"
@@ -45,7 +48,8 @@
             android:text="Pastoral/Herding dog"
             app:layout_constraintTop_toTopOf="@id/group_label"
             app:layout_constraintStart_toEndOf="@id/vertical_guideline"
-            android:textSize="16dp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/dog_origin"
@@ -54,7 +58,8 @@
             android:text="Mexico/France"
             app:layout_constraintTop_toTopOf="@id/origin_label"
             app:layout_constraintStart_toEndOf="@id/vertical_guideline"
-            android:textSize="16dp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/breed_label"
@@ -64,7 +69,8 @@
             app:layout_constraintEnd_toEndOf="@id/vertical_guideline"
             app:layout_constraintTop_toBottomOf="@id/dog_image"
             android:layout_marginTop="4dp"
-            android:textSize="16dp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/size_label"
@@ -74,7 +80,8 @@
             app:layout_constraintTop_toBottomOf="@id/dog_name"
             app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
             android:layout_marginTop="4dp"
-            android:textSize="16dp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/group_label"
@@ -84,7 +91,8 @@
             app:layout_constraintTop_toBottomOf="@id/dog_size"
             app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
             android:layout_marginTop="4dp"
-            android:textSize="16dp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/origin_label"
@@ -94,7 +102,8 @@
             app:layout_constraintTop_toBottomOf="@id/dog_group"
             app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
             android:layout_marginTop="4dp"
-            android:textSize="16dp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/vertical_guideline"

@@ -6,5 +6,6 @@ data class Dog(
     val size: String,
     val group: String,
     val origin: String,
-    val purity: String
+    val purity: String,
+    val lifespan: String
 )
